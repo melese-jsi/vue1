@@ -1,5 +1,7 @@
-import AddisVue from '@/components/AddisVue.vue'
-import HelloWorld from '@/components/HelloWorld.vue'
+
+import eurcardView from '@/components/eurcard.vue'
+import usdcardView from '@/components/usdcard.vue'
+
 import { createRouter, createWebHistory } from 'vue-router'
 
 
@@ -7,12 +9,17 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HelloWorld
+    component: usdcardView   
   },
-  {path:'/addis',
-    name:'addis',
-    component: AddisVue
-  }
+  {path:'/usd',
+    component:usdcardView,
+    name:'usdcard'},
+    
+    {path:'/eur',
+    component:eurcardView,
+    name:'eurcard'}
+
+  
   
 ]
 
