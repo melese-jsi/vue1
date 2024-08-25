@@ -16,11 +16,14 @@
   
  </template>
 <script>
-
+import { useWebAppTheme } from 'vue-tg'
  export default {
   name: 'App',
   components:{
-    
+   
+  },
+  mounted(){
+    useWebAppTheme.colorScheme='light'
   }
  
  
